@@ -1,21 +1,28 @@
-nav {
+.mainNavBar {
   position: absolute;
   left: 0;
   top: 0;
   height: 100vh;
   width: 7vw;
-  background-color: darkgray;
+  background-color: #267d8d;
   opacity: 0.5;
 }
-nav li {
+.mainNavBar li {
   margin-left: 0;
   padding-bottom: 100px;
 }
-nav li a {
+.mainNavBar li a {
   background-color: azure;
   border: 5px solid black;
   border-radius: 10px;
   font-size: 12px;
+}
+
+.overMijPage {
+  background-color: khaki;
+  width: 60vw;
+  height: 30vh;
+  text-align: center;
 }
 
 /*# sourceMappingURL=output.css.map */
