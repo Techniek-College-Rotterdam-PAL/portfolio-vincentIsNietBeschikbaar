@@ -1,4 +1,5 @@
 $my_favorite_color: #267d8d;
+$myfavoriteWhite: aliceblue;
 
 
 .mainNavBar{
@@ -13,7 +14,7 @@ $my_favorite_color: #267d8d;
         margin-left: 0;
         padding-bottom: 100px;
         a{
-            background-color: azure;
+            background-color: $myfavoriteWhite;
             border: 5px solid black;
             border-radius: 10px;
             font-size: 12px;
@@ -22,9 +23,30 @@ $my_favorite_color: #267d8d;
 }
 
 .overMijPage{
-    background-color: khaki;
+    background-color: gray;
     width: 60vw;
-    height: 30vh;
+    height: 50vh;
 
     text-align: center;
+    margin: 0 auto;
+}
+
+.topBar {
+    background-color: cornflowerblue;
+    width: 60vw;
+    height: 5vh;
+    text-align: right;
+    margin: 0 auto;
+    margin-top: 100px;
+    z-index: 4;
+
+    a {
+        font-size: 30px;
+        color: $myfavoriteWhite;
+        text-decoration: none;
+
+        &:hover {
+            background-color: red;
+        }
+    }
 }
