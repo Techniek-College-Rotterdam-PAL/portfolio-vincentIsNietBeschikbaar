@@ -1,52 +1,99 @@
-$my_favorite_color: #267d8d;
-$myfavoriteWhite: aliceblue;
+$standardGray: gray;
+$my_favorite_color: rgb(103, 150, 192);
 
+body {
+    background-image: url(../IMG/PortofolioBackground.png);
+}
 
-.mainNavBar{
+.mainNavBar {
     position: absolute;
     left: 0;
     top: 0;
     height: 100vh;
     width: 7vw;
-    background-color: $my_favorite_color;
-    opacity: .5;
-    li{
+    background-color: $standardGray;
+    opacity: .6;
+
+    li {
         margin-left: 0;
         padding-bottom: 100px;
-        a{
-            background-color: $myfavoriteWhite;
-            border: 5px solid black;
+
+        a {
+            background-color: aliceblue;
+            border: 3px solid black;
             border-radius: 10px;
-            font-size: 12px;
+            font-size: 15px;
+            padding: 5px;
+            text-decoration: none;
+            color: darkorchid;
+            position: fixed;
+            &:hover {
+                padding: 10px;
+            }
         }
     }
 }
 
-.overMijPage{
-    background-color: gray;
+.title {
+    color: $my_favorite_color;
+    text-align: center;
+}
+
+.overMijPage {
+    background-color: $standardGray;
     width: 60vw;
     height: 50vh;
 
     text-align: center;
     margin: 0 auto;
+    p{
+        font-size: larger;
+    }
+
+    img{
+        margin-top: 15px;
+    }
 }
 
 .topBar {
-    background-color: cornflowerblue;
+    background-color: $my_favorite_color;
     width: 60vw;
     height: 5vh;
-    text-align: right;
     margin: 0 auto;
     margin-top: 100px;
     z-index: 4;
+    display: flex; // Use flexbox
+    align-items: flex-start; // Align items to the top
+    justify-content: space-between; // Space out items
+
+    nav {
+        width: 300px;
+        height: 30px;
+        background-color: $standardGray;
+        margin-left: 100px;
+        text-align: left;
+        
+        p{
+            margin-top: 5px;
+        }
+    }
 
     a {
         font-size: 30px;
-        color: $myfavoriteWhite;
+        color: white;
         text-decoration: none;
 
         &:hover {
             background-color: red;
         }
     }
+}
+
+.backgroundArt{
+    height: 70vh;
+    opacity: .5;
+    position:fixed;
+    bottom: 0px;
+    left:20%;
+    z-index: -1;
 }

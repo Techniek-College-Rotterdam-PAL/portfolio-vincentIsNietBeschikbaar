@@ -1,11 +1,15 @@
+body {
+  background-image: url(../IMG/PortofolioBackground.png);
+}
+
 .mainNavBar {
   position: absolute;
   left: 0;
   top: 0;
   height: 100vh;
   width: 7vw;
-  background-color: #267d8d;
-  opacity: 0.5;
+  background-color: gray;
+  opacity: 0.6;
 }
 .mainNavBar li {
   margin-left: 0;
@@ -13,9 +17,21 @@
 }
 .mainNavBar li a {
   background-color: aliceblue;
-  border: 5px solid black;
+  border: 3px solid black;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 15px;
+  padding: 5px;
+  text-decoration: none;
+  color: darkorchid;
+  position: fixed;
+}
+.mainNavBar li a:hover {
+  padding: 10px;
+}
+
+.title {
+  color: rgb(103, 150, 192);
+  text-align: center;
 }
 
 .overMijPage {
@@ -25,23 +41,50 @@
   text-align: center;
   margin: 0 auto;
 }
+.overMijPage p {
+  font-size: larger;
+}
+.overMijPage img {
+  margin-top: 15px;
+}
 
 .topBar {
-  background-color: cornflowerblue;
+  background-color: rgb(103, 150, 192);
   width: 60vw;
   height: 5vh;
-  text-align: right;
   margin: 0 auto;
   margin-top: 100px;
   z-index: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.topBar nav {
+  width: 300px;
+  height: 30px;
+  background-color: gray;
+  margin-left: 100px;
+  text-align: left;
+}
+.topBar nav p {
+  margin-top: 5px;
 }
 .topBar a {
   font-size: 30px;
-  color: aliceblue;
+  color: white;
   text-decoration: none;
 }
 .topBar a:hover {
   background-color: red;
+}
+
+.backgroundArt {
+  height: 70vh;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 0px;
+  left: 20%;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=output.css.map */
